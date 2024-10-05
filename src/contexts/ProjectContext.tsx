@@ -43,8 +43,8 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({ children })
 
     {
       id: '9',
-      title: '多孔質材料の細孔計計測Program',
-      description: '表面のSEM画像をOpenCVにより処理をして、細孔径を求めます。アプリとして設計していないのは一般的な研究者さん達は実験データをWeb上に投稿することには抵抗があり、（アプリでの実行に）需要がまったくないと思われるからです。従って、ローカルでのcloneと実行を前提に作っています。',
+      title: 'PoroMet',
+      description: '材料表面のSEM画像をOpenCVにより処理をして、細孔径を求めます。Programのみを共有します。アプリとして設計していないのは一般的な研究者の方々は実験データをWeb上に投稿することには抵抗があり、（アプリでの実行に）需要が全くないと思われるからです。従って、ローカルでのcloneと実行を前提に作っています。',
       content: '',
       progression: '進行中',
       progress: [
