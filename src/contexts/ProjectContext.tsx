@@ -40,6 +40,42 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({ children })
     //   githubUrl: ''
     // },
 
+{
+      id: '11',
+      title: 'Osusume',
+      description: '好きなものを保存するツールとか記録するツールってあるけどおすすめするツールって無いなあと',
+      content: '単純に自分が読んでいる本の中で、重要な意味を持つものを構造化して表示したい。あわよくば必要なときに共有したいと思って、国立国会図書館のAPIから本をおすすめするアプリを作ろうかなと。ただ、自分が欲しいだけなのだけど。',
+      progression: '構想中',
+      progress: [
+        {
+          title: 'Initial Deploy',
+          date: '2024-11-08',
+          content: ''
+        }
+      ],
+      appUrl: '',
+      githubUrl: ''
+    },
+
+
+    {
+      id: '10',
+      title: 'lamppost',
+      description: '魂の影を照らすのが小説なのだとすると社会の影を照らす人って誰なんでしょうね',
+      content: 'なんだか家太后とを行っているけど、そういう大きなmovementにしたい。ただ、おせっかいにもなりたくないよね。',
+      progression: '構想中',
+      progress: [
+        {
+          title: 'Initial Deploy',
+          date: '2024-11-08',
+          content: ''
+        }
+      ],
+      appUrl: '',
+      githubUrl: ''
+    },
+
+
 
     {
       id: '9',
