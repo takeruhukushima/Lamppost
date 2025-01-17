@@ -39,6 +39,24 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({ children })
     //   appUrl: '',
     //   githubUrl: ''
     // },
+    {
+      id: '22',
+      title: 'Nomadocs',
+      description: 'Docsまとめてます。',
+      content: 'きのみきのままちんどうちゅう',
+      progression: 'deploy済',
+      progress: [
+        {
+          title: 'Initial Deploy',
+          date: '2025-01-17',
+          content: '不完全だけど、一応のデプロイ'
+        }
+      ],
+      appUrl: 'https://nomadocs.vercel.app/',
+      githubUrl: 'https://github.com/takeruhukushima/Nomadocs.git'
+    },
+
+
 
 {
       id: '21',
@@ -237,19 +255,24 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({ children })
 
     {
       id: '10',
-      title: 'lamppost',
+      title: 'Lamppost',
       description: '魂の影を照らすのが小説なのだとすると社会の影を照らす人って誰なんでしょうね',
-      content: 'なんだか家太后とを行っているけど、そういう大きなmovementにしたい。ただ、おせっかいにもなりたくないよね。',
-      progression: '構想中',
+      content: 'なんだか仰々しいことを言っているけど、小さいことからコツコツと、眼の前のことにひたむきにしていくことにした。',
+      progression: 'deploy済',
       progress: [
         {
           title: 'Initial Deploy',
           date: '2024-11-08',
           content: ''
-        }
+        },
+        {
+          title: '内容の変更',
+          date: '2024-11-08',
+          content: ''
+        },
       ],
-      appUrl: '',
-      githubUrl: ''
+      appUrl: 'https://lamppost.vercel.app/',
+      githubUrl: 'https://github.com/takeruhukushima/Lamppost.git'
     },
 
 

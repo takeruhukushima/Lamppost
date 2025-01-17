@@ -8,11 +8,20 @@ import styles from './Home.module.css';
 const Home: React.FC = () => {
   const { projects } = useProjectContext();
 
+  // 進捗状態に基づく優先度を定義（小さい値ほど優先度が高い）
+  const progressionPriority: { [key in '進行中' | 'deploy済' | '構想中']: number } = {
+    'deploy済': 0,
+    '進行中': 1,
+    '構想中': 2
+  };
+
   // プロジェクトをソートする
   const sortedProjects = [...projects].sort((a, b) => {
-    if (a.id === "1") return -1; // id=1のプロジェクトを最上部に
-    if (b.id === "1") return 1;  // id=1のプロジェクトが最上部でない場合
-    return b.progression.localeCompare(a.progression); // 進捗で逆順にソート
+    if (a.id === "1") return -1; // id=1のプロジェクトを最上部に配置
+    if (b.id === "1") return 1;  // 逆の場合はbを前に
+
+    // 進捗状態の優先度で比較
+    return progressionPriority[a.progression] - progressionPriority[b.progression];
   });
 
   return (
@@ -21,11 +30,17 @@ const Home: React.FC = () => {
       <h1 className={styles.pageTitle}>Projects</h1>
       <section className={styles.projectSection}>
         {sortedProjects.map(project => (
-          <Link key={project.id} to={`/projects/${project.id}`} className={styles.projectCardLink}>
+          <Link
+            key={project.id}
+            to={`/projects/${project.id}`}
+            className={styles.projectCardLink}
+          >
             <div className={styles.projectCard}>
               <h2 className={styles.projectTitle}>{project.title}</h2>
               <p className={styles.projectDescription}>{project.description}</p>
-              <p className={`${styles.projectProgression} ${getProgressionClass(project.progression)}`}>
+              <p
+                className={`${styles.projectProgression} ${getProgressionClass(project.progression)}`}
+              >
                 {project.progression}
               </p>
             </div>
@@ -38,7 +53,7 @@ const Home: React.FC = () => {
 };
 
 // progression のクラスを決定するヘルパー関数
-const getProgressionClass = (progression: '進行中' | 'deploy済' | '構想中') => {
+const getProgressionClass = (progression: '進行中' | 'deploy済' | '構想中'): string => {
   switch (progression) {
     case '進行中':
       return styles['progression-in-progress'];
