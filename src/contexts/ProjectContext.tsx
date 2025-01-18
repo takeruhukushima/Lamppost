@@ -240,16 +240,16 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({ children })
       title: 'Osusume',
       description: '好きなものを保存するツールとか記録するツールってあるけどおすすめするツールって無いなあと',
       content: '単純に自分が読んでいる本の中で、重要な意味を持つものを構造化して表示したい。あわよくば必要なときに共有したいと思って、国立国会図書館のAPIから本をおすすめするアプリを作ろうかなと。ただ、自分が欲しいだけなのだけど。',
-      progression: '構想中',
+      progression: 'deploy済',
       progress: [
         {
           title: 'Initial Deploy',
-          date: '2024-11-08',
-          content: ''
+          date: '2025-01-18',
+          content: '不完全ながら、一応のDeploy'
         }
       ],
-      appUrl: '',
-      githubUrl: ''
+      appUrl: 'https://osusume-tf.vercel.app/',
+      githubUrl: 'https://github.com/takeruhukushima/Osusume'
     },
 
 
