@@ -13,13 +13,13 @@
 まず、Gitを使用してリポジトリをローカルマシンにクローンします。
 
 ```bash
-git clone https://github.com/takeruhukushima/Project-List.git
+git clone https://github.com/takeruhukushima/Lamppost.git
 ```
 
 プロジェクトディレクトリに移動します。
 
 ```bash
-cd Project-List
+cd Lamppost
 ```
 
 ### 依存関係のインストール
