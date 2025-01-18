@@ -239,7 +239,7 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({ children })
       id: '11',
       title: 'Osusume',
       description: '好きなものを保存するツールとか記録するツールってあるけどおすすめするツールって無いなあと',
-      content: '単純に自分が読んでいる本の中で、重要な意味を持つものを構造化して表示したい。あわよくば必要なときに共有したいと思って、国立国会図書館のAPIから本をおすすめするアプリを作ろうかなと。ただ、自分が欲しいだけなのだけど。',
+      content: '好きなものを好きなだけ語らせてください。怒られたら都度、書き換えます。',
       progression: 'deploy済',
       progress: [
         {
