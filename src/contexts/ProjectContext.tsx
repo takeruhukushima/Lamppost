@@ -53,8 +53,8 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({ children })
           content: '急いで作ったのだけど、一応のデプロイ。'
         }
       ],
-      appUrl: '',
-      githubUrl: ''
+      appUrl: 'https://ludi-tf.vercel.app/',
+      githubUrl: 'https://github.com/takeruhukushima/Ludi'
     },
     {
       id: '22',
