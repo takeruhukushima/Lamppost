@@ -39,6 +39,23 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({ children })
     //   appUrl: '',
     //   githubUrl: ''
     // },
+
+    {
+      id: '23',
+      title: 'Ludi',
+      description: 'グラフィクス関連でのLog残します',
+      content: '別にアーティストになるつもりなんてないんだからねっ',
+      progression: 'deploy済',
+      progress: [
+        {
+          title: 'Initial Deploy',
+          date: '2024-01-19',
+          content: '急いで作ったのだけど、一応のデプロイ。'
+        }
+      ],
+      appUrl: '',
+      githubUrl: ''
+    },
     {
       id: '22',
       title: 'Nomadocs',
