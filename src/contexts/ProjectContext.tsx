@@ -40,6 +40,23 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({ children })
     //   githubUrl: ''
     // },
 
+     {
+      id: '24',
+      title: 'OPENBOOK',
+      description: '思いつきでOpensourceで教科書を作ってみた',
+      content: 'Opensourceで執筆をするなんてインターネットが出た当初からある思想だと想像するけど、思いつきで自分ができるのかなと思って作ってみた。オードリータンさんがPlularityでmkdocs使ってたのでそれを採用して、githubにpush,github pagesにて公開。論文も書いてみたくてlatexで書いてみた。個人的にはtexをローカルの環境構築ができてpdfへの書き出しまでできただけでもよかった。',
+      progression: 'deploy済',
+      progress: [
+        {
+          title: 'Initial Deploy',
+          date: '2025-02-06',
+          content: '中身は全然精査してないけど、一応のデプロイ'
+        }
+      ],
+      appUrl: 'https://takeruhukushima.github.io/openbook-chemical/',
+      githubUrl: 'https://github.com/takeruhukushima/openbook-chemical.git'
+    },
+
     {
       id: '23',
       title: 'Ludi',
