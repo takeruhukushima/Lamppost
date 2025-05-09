@@ -40,6 +40,23 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({ children })
     //   githubUrl: ''
     // },
 
+    {
+      id: '25',
+      title: 'Slide',
+      description: 'スライド資料の管理',
+      content: 'marpで作成したスライド資料を保存、閲覧、共有するアプリ',
+      progression: 'deploy済',
+      progress: [
+        {
+          title: 'Initial Deploy',
+          date: '2024-05-09', 
+          content: ''
+        }
+      ],
+      appUrl: 'https://slide-mauve.vercel.app/',
+      githubUrl: 'https://github.com/takeruhukushima/Slide.git'
+    },
+
      {
       id: '24',
       title: 'OPENBOOK',
