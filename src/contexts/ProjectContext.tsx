@@ -39,7 +39,22 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({ children })
     //   appUrl: '',
     //   githubUrl: ''
     // },
-
+{
+      id: '26',
+      title: 'Notes',
+      description: 'Blog',
+      content: 'ブログを保存するアプリ',
+      progression: 'deploy済',
+      progress: [
+        {
+          title: 'Initial Deploy',
+          date: '2024',
+          content: ''
+        }
+      ],
+      appUrl: 'https://notes-lake-five.vercel.app',
+      githubUrl: 'https://github.com/takeruhukushima/Notes.git'
+    },
     {
       id: '25',
       title: 'Slide',
